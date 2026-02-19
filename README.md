@@ -14,16 +14,16 @@ The work combines numerical fire simulations and Gaussian Process (GPC) surrogat
 
 ## Repository Structure
 
-### `SAFIRNumericalSimulations/`
+### `SAFIRNumericalSimulations`
 Input files and scripts related to the finite element fire simulations used. 
 
-### `DefineBounds/`
+### `DefineBounds`
 Scripts used to define parameter ranges for the simulation and modelling framework.
 
-### `BigModel/`
+### `BigModel`
 Implementation of the primary Gaussian Process surrogate model(s) used for burnout resistance prediction based on the numerical simulations.
 
-### `ActiveLearningToy/`
+### `ActiveLearningToy`
 Simplified or exploratory implementation of the active learning strategy used during model development.
 
 
