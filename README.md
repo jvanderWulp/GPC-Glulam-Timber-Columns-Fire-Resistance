@@ -22,10 +22,19 @@ Scripts used to define parameter ranges for the simulation and modelling framewo
 
 ### `BigModel`
 Implementation of the primary Gaussian Process surrogate model(s) used for burnout resistance prediction based on the numerical simulations.
+Parts of the implementation in this folder is based on the methodology presented in:
+
+Guang Zhao, Edward R. Dougherty, Byung-Jun Yoon, Francis J. Alexander, and Xiaoning Qian (2021).
+Efficient Active Learning for Gaussian Process Classification by Error Reduction.
+Proceedings of NeurIPS 2021.
 
 ### `ActiveLearningToy`
 Simplified or exploratory implementation of the active learning strategy used during model development.
+Parts of the implementation in this folder is based on the methodology presented in:
 
+Guang Zhao, Edward R. Dougherty, Byung-Jun Yoon, Francis J. Alexander, and Xiaoning Qian (2021).
+Efficient Active Learning for Gaussian Process Classification by Error Reduction.
+Proceedings of NeurIPS 2021.
 
 ## Citation
 
