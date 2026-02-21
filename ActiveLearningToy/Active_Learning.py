@@ -321,26 +321,25 @@ def plot_acquisition_mc_field(
     xspace = np.asarray(xspace, float)
     utilitymat = np.asarray(utilitymat, float)
 
-=    mask = np.isfinite(utilitymat)
+    mask = np.isfinite(utilitymat)
     xs = xspace[mask, 0]
     ys = xspace[mask, 1]
     zs = utilitymat[mask]
 
     fig = plt.figure(figsize=(6.5, 6))
 
-=    cs = plt.tricontourf(xs, ys, zs, levels=20)
+    cs = plt.tricontourf(xs, ys, zs, levels=20)
     cbar = plt.colorbar(cs)
     cbar.set_label("Acquisition value")
 
-=    plt.scatter(
+    plt.scatter(
         xs, ys,
         c="k",
         s=8,
         alpha=0.4,
         label="MC candidates",
     )
-
-=    if X_history is not None and len(X_history) > 0:
+    if X_history is not None and len(X_history) > 0:
         X_history = np.asarray(X_history, float)
         plt.scatter(
             X_history[:, 0],
@@ -350,8 +349,7 @@ def plot_acquisition_mc_field(
             s=40,
             label="Previous x*",
         )
-
-=    if x_star is not None:
+    if x_star is not None:
         x_star = np.asarray(x_star, float).ravel()
         plt.scatter(
             [x_star[0]],
